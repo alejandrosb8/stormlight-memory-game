@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/stormlight-memory-game/static/css/main.52d270d0.css",
+    "main.js": "/stormlight-memory-game/static/js/main.fc65fbfa.js",
+    "static/js/787.52b902e2.chunk.js": "/stormlight-memory-game/static/js/787.52b902e2.chunk.js",
+    "static/media/background.png": "/stormlight-memory-game/static/media/background.ca7d4ef5af6c33952591.png",
+    "static/media/AlethiTS.ttf": "/stormlight-memory-game/static/media/AlethiTS.ec3054e4065a93b2633a.ttf",
+    "index.html": "/stormlight-memory-game/index.html",
+    "main.52d270d0.css.map": "/stormlight-memory-game/static/css/main.52d270d0.css.map",
+    "main.fc65fbfa.js.map": "/stormlight-memory-game/static/js/main.fc65fbfa.js.map",
+    "787.52b902e2.chunk.js.map": "/stormlight-memory-game/static/js/787.52b902e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52d270d0.css",
+    "static/js/main.fc65fbfa.js"
+  ]
+}
