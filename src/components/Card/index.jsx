@@ -15,7 +15,7 @@ export default function index({ idCard, idElement, handleClick }) {
           <img src="https://cutewallpaper.org/27/brandon-sanderson-phone-wallpaper/226015260.jpg" alt="Stormlight logo" />
         </div>
         <div className="flip-card-back">
-          <img src={`./../../../public/characters/${cardData.image.file}`} alt={`${cardData.name} from stormlight archive`} />
+          <img src={`${process.env.PUBLIC_URL}/characters/${cardData.image.file}`} alt={`${cardData.name} from stormlight archive`} />
         </div>
       </div>
     </div>
