@@ -18,7 +18,7 @@ export default function GameOver({ time, cards, handlechange }) {
           const cardinfo = CARDS_LIST.find((thiscard) => thiscard.id === card);
           return (
             <picture key={index}>
-              <img src={`/characters/${cardinfo.image.file}`} alt={`${cardinfo.name} from Stormlight Archive`} />
+              <img src={`./../../../public/characters/${cardinfo.image.file}`} alt={`${cardinfo.name} from Stormlight Archive`} />
               <span>{cardinfo.name}</span>
             </picture>
           );
