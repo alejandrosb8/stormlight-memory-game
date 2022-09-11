@@ -1,0 +1,97 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.container__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+button {
+  background-color: #e2edf3;
+  border: none;
+  padding: 8px 28px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #494674;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+}
+button:hover {
+  background-color: var(--font-primary);
+}
+h3 {
+  margin-top: 40px;
+  text-align: center;
+}
+.image__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  margin: auto;
+  width: 100%;
+  place-content: center;
+  place-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+picture {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+span {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transition: transform 0.25s ease-out;
+  -webkit-transition: transform 0.25s ease-out;
+  -moz-transition: transform 0.25s ease-out;
+  -ms-transition: transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
+  z-index: 10;
+}
+picture:hover span {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}

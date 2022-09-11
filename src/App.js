@@ -1,23 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import GameStart from './layouts/GameStart';
+import Game from './layouts/Game';
+import { useState, useEffect } from 'react';
+import GameOver from './layouts/GameOver';
 
 function App() {
+  const [layout, setLayout] = useState('home');
+  const [cardNumber, setCardNumber] = useState(6);
+  const [gameinfo, setGameinfo] = useState({
+    time: 0,
+    cards: [],
+  });
+
+  useEffect(() => {
+    window.addEventListener('beforeunload', function (e) {
+      e.preventDefault();
+      e.returnValue = '';
+    });
+  }, []);
+
+  const handleSubmit = (e, number) => {
+    e.preventDefault();
+    setCardNumber(number);
+    setLayout('game');
+  };
+
+  const handleWin = (time, cardNames) => {
+    setGameinfo({
+      time: time,
+      cards: cardNames,
+    });
+    setLayout('gameOver');
+  };
+
+  const handlechange = (e, newLayout) => {
+    setLayout(newLayout);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Stormlight Archive Memory Game</h1>
+      {layout === 'home' && <GameStart handleSubmit={handleSubmit} />}
+      {layout === 'game' && <Game numberCards={cardNumber} handleWin={handleWin} />}
+      {layout === 'gameOver' && <GameOver time={gameinfo.time} cards={gameinfo.cards} handlechange={handlechange} />}
     </div>
   );
 }

@@ -1,0 +1,209 @@
+[
+  {
+    "id": "taravangian",
+    "name": "Taravangian",
+    "image": {
+      "file": "Taravangian_as_the_Wheel_of_Fortune_Orientation_1.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Taravangian"
+  },
+  {
+    "id": "dalinar",
+    "name": "Dalinar Kholin",
+    "image": {
+      "file": "Dalinar_-_IV._The_Emperor_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Dalinar_Kholin"
+  },
+  {
+    "id": "gavilar",
+    "name": "Gavilar Kholin",
+    "image": {
+      "file": "King_Gavilar.jpg",
+      "credits": "[Grant M. Hansen](https://coppermind.net/wiki/Coppermind:Artists/Grant_M._Hansen)"
+    },
+    "coppermind": "Gavilar_Kholin"
+  },
+  {
+    "id": "adolin",
+    "name": "Adolin Kholin",
+    "image": {
+      "file": "Adolin_-_VIII._Strength_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Adolin_Kholin"
+  },
+  {
+    "id": "kaladin",
+    "name": "Kaladin Stormblessed",
+    "image": {
+      "file": "Kaladin_-_XI_Justice_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Kaladin"
+  },
+  {
+    "id": "renarin",
+    "name": "Renarin Kholin",
+    "coppermind": "Renarin_Kholin",
+    "image": {
+      "file": "Renarin_-_XVIII._The_Moon_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    }
+  },
+  {
+    "id": "navani",
+    "name": "Navani Kholin",
+    "image": {
+      "file": "Navani_-_III._The_Empress.png",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Navani_Kholin"
+  },
+  {
+    "id": "elhokar",
+    "name": "Elhokar Kholin",
+    "image": {
+      "file": "Elhokar_-_V._Hierophant.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Elhokar_Kholin"
+  },
+  {
+    "id": "jasnah",
+    "name": "Jasnah Kholin",
+    "image": {
+      "file": "Jasnah_-_II._The_High_Priestess_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Jasnah_Kholin"
+  },
+  {
+    "id": "shallan",
+    "name": "Shallan Davar",
+    "image": {
+      "file": "Shallan_-_I._The_Magician_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Shallan"
+  },
+  {
+    "id": "eshonai",
+    "name": "Eshonai",
+    "coppermind": "Eshonai",
+    "image": {
+      "file": "Eshonai_-_XIII._Death.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    }
+  },
+  {
+    "id": "venli",
+    "name": "Venli",
+    "image": {
+      "file": "Venli_-_XVI._The_Tower_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Venli"
+  },
+  {
+    "id": "lift",
+    "name": "Lift",
+    "image": {
+      "file": "Lift_-_VII._The_Chariot_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Lift"
+  },
+  {
+    "id": "moash",
+    "name": "Moash",
+    "image": {
+      "file": "Moash_-_IX._Hermit.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Moash"
+  },
+  {
+    "id": "odium",
+    "name": "Odium",
+    "image": {
+      "file": "Odium_-_XV_the_Devil.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Odium"
+  },
+  {
+    "id": "szeth",
+    "name": "Szeth",
+    "image": {
+      "file": "Szeth_-_XX._Judgement_.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Szeth"
+  },
+  {
+    "id": "wit",
+    "name": "Hoid",
+    "image": {
+      "file": "Wit-Fool_by_taratjah.jpg",
+      "credits": "[Tara Spruit](https://coppermind.net/wiki/Coppermind:Artists/taratjah)"
+    },
+    "coppermind": "Hoid"
+  },
+  {
+    "id": "cultivation",
+    "name": "Cultivation",
+    "image": {
+      "file": "Cultivation_Eduard_Coll.jpg",
+      "credits": "[Eduard Coll](https://www.artstation.com/eduardcoll)"
+    },
+    "coppermind": "Cultivation"
+  },
+  {
+    "id": "honor",
+    "name": "Honor",
+    "image": {
+      "file": "Honor_Kyle_Pearson.jpg",
+      "credits": "[Kyle Pearson](https://coppermind.net/wiki/Coppermind:Artists/Kyle_Pearson)"
+    },
+    "coppermind": "Honor"
+  },
+  {
+    "id": "rysn",
+    "name": "Rysn",
+    "image": {
+      "file": "Rysn_&_Larkin_by_botanicaxu.jpg",
+      "credits": "[botanicaxu](https://botanicaxu.tumblr.com/post/165173520094/oathbringer-countdown-70-days-rysn-larkin)"
+    },
+    "coppermind": "Rysn"
+  },
+  {
+    "id": "pailiah",
+    "name": "Pailiah",
+    "image": {
+      "file": "Pailiah_Endsheet.png",
+      "credits": "[Donato Giancola]"
+    },
+    "coppermind": "Pailiah"
+  },
+  {
+    "id": "talenel",
+    "name": "Talenel",
+    "image": {
+      "file": "Taln_Endsheet.jpg",
+      "credits": "[Magali Villeneuve]"
+    },
+    "coppermind": "Talenel"
+  },
+  {
+    "id": "kalak",
+    "name": "Kalak",
+    "image": {
+      "file": "Kalak_Endsheet.png",
+      "credits": "[Magali Villeneuve]"
+    },
+    "coppermind": "Kalak"
+  }
+]
