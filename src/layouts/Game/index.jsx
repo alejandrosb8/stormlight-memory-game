@@ -8,21 +8,33 @@ const INIT_GAMESTATE = {
   clickTimes: 0,
   previusCard: undefined,
   cardsFound: [],
+  usedCards: [],
+  errors: 0,
+  maxErrors: Infinity,
+  isUnlimited: false,
   gameOver: false,
 };
 
-export default function Game({ numberCards, handleWin }) {
+export default function Game({ gameStartInfo, handleGameOver }) {
   const [cards, setCards] = useState([]);
   const [time, setTime] = useState(0);
 
   const [game, setGame] = useState(INIT_GAMESTATE);
+
+  const { numberCards, errorsNumber, isUnlimited } = gameStartInfo;
 
   useEffect(() => {
     let cardsToUse = shuffle(CARD_LIST).slice(0, numberCards);
     let doubleArray = cardsToUse.flatMap((card) => [card, card]);
     let cardsToPut = shuffle(doubleArray);
     setCards(cardsToPut);
-    setGame({ ...game, pairsToWin: numberCards - 1 });
+    setGame({
+      ...game,
+      usedCards: cardsToUse.map((card) => card.id),
+      pairsToWin: numberCards - 1,
+      maxErrors: errorsNumber,
+      isUnlimited: isUnlimited,
+    });
     // eslint-disable-next-line
   }, []);
 
@@ -81,12 +93,25 @@ export default function Game({ numberCards, handleWin }) {
 
             if (game.pairsToWin <= 0) {
               setGame({ ...game, gameOver: true });
-              setTimeout(() => handleWin(document.getElementById('timer').textContent, [...new Set([...game.cardsFound, idCard])]), 1000);
+              setTimeout(
+                () => handleGameOver(true, game.errors, document.getElementById('timer').textContent, [...new Set([...game.usedCards])]),
+                1000
+              );
             }
           } else {
             //console.log('incorrecto');
-            setTimeout(() => handleTimeOut(document.getElementById(game.previusCard[1]), card), 1000);
-            setGame({ ...game, clickTimes: 0, previusCard: undefined });
+            setGame({ ...game, clickTimes: 0, previusCard: undefined, errors: game.errors + 1 });
+
+            if (game.errors >= game.maxErrors - 1 && !game.isUnlimited) {
+              setGame({ ...game, gameOver: true });
+              setTimeout(
+                () =>
+                  handleGameOver(false, game.errors + 1, document.getElementById('timer').textContent, [...new Set([...game.usedCards])]),
+                1000
+              );
+            } else {
+              setTimeout(() => handleTimeOut(document.getElementById(game.previusCard[1]), card), 1000);
+            }
           }
         }
       } else {
@@ -98,6 +123,7 @@ export default function Game({ numberCards, handleWin }) {
   return (
     <div className="gameContainer">
       <h2 id="timer">{TimeString(time)}</h2>
+      {game.isUnlimited ? <h2>{`Errors: ${game.errors}`}</h2> : <h2>{`Errors: ${game.errors}/${game.maxErrors}`}</h2>}
       <div className="cardContainer">
         {cards.map((card, index) => {
           return <Card key={index} idCard={card.id} idElement={index} handleClick={handleCardClick} />;

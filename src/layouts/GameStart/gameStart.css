@@ -9,9 +9,9 @@ p {
 }
 form {
   margin: auto;
-  margin-top: 80px;
+  margin-top: 50px;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,13 +25,14 @@ form div {
   flex-direction: column;
   row-gap: 15px;
 }
-form label {
-  font-size: 1.6rem;
+form .label-main {
+  font-size: 1.8rem;
   text-align: center;
   color: #e2edf3;
   font-weight: 600;
+  margin-top: 20px;
 }
-form input {
+form input[type='number'] {
   width: 5rem;
   height: 2rem;
   max-width: 100%;
@@ -47,11 +48,28 @@ form input {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+.checkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  column-gap: 8px;
+}
+.label-check {
+  font-size: 1.8rem;
+  color: #e2edf3;
+  font-weight: 600;
+}
+form input[type='checkbox'] {
+  width: 2rem;
+  height: 2rem;
+}
 form button {
   background-color: #e2edf3;
   border: none;
-  padding: 8px 28px;
-  font-size: 1.2rem;
+  padding: 12px 34px;
+  font-size: 1.4rem;
   font-weight: 700;
   cursor: pointer;
   color: #494674;
@@ -65,7 +83,11 @@ form button {
   -moz-transition: all 0.1s ease-out;
   -ms-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
+  margin-bottom: 20px;
 }
 form button:hover {
   background-color: var(--font-primary);
+}
+.disabled {
+  color: transparent !important;
 }

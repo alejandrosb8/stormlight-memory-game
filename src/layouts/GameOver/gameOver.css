@@ -34,13 +34,17 @@ button {
 button:hover {
   background-color: var(--font-primary);
 }
+h2 {
+  font-size: 3rem;
+}
 h3 {
   margin-top: 40px;
   text-align: center;
+  font-size: 1.8rem;
 }
 .image__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fit, 300px);
   margin: auto;
   width: 100%;
   place-content: center;
@@ -67,7 +71,7 @@ img {
 span {
   position: absolute;
   width: 100%;
-  height: 60px;
+  height: auto;
   left: 0;
   bottom: 0;
   text-align: center;
@@ -87,6 +91,16 @@ span {
   -ms-transition: transform 0.25s ease-out;
   -o-transition: transform 0.25s ease-out;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700px;
+  color: #fff;
 }
 picture:hover span {
   transform: translateX(0);

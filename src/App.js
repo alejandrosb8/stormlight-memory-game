@@ -6,7 +6,11 @@ import GameOver from './layouts/GameOver';
 
 function App() {
   const [layout, setLayout] = useState('home');
-  const [cardNumber, setCardNumber] = useState(6);
+  const [gameStarted, setGameStarted] = useState({
+    numberCards: 0,
+    errorsNumber: 0,
+    isUnlimited: false,
+  });
   const [gameinfo, setGameinfo] = useState({
     time: 0,
     cards: [],
@@ -19,14 +23,21 @@ function App() {
     });
   }, []);
 
-  const handleSubmit = (e, number) => {
+  const handleSubmit = (e, number, erros, unlimited) => {
     e.preventDefault();
-    setCardNumber(number);
+    setGameStarted({
+      ...gameStarted,
+      numberCards: number,
+      errorsNumber: erros,
+      isUnlimited: unlimited,
+    });
     setLayout('game');
   };
 
-  const handleWin = (time, cardNames) => {
+  const handleGameOver = (isWin, errors, time, cardNames) => {
     setGameinfo({
+      isWin: isWin,
+      errors: errors,
       time: time,
       cards: cardNames,
     });
@@ -41,8 +52,8 @@ function App() {
     <div className="App">
       <h1>Stormlight Archive Memory Game</h1>
       {layout === 'home' && <GameStart handleSubmit={handleSubmit} />}
-      {layout === 'game' && <Game numberCards={cardNumber} handleWin={handleWin} />}
-      {layout === 'gameOver' && <GameOver time={gameinfo.time} cards={gameinfo.cards} handlechange={handlechange} />}
+      {layout === 'game' && <Game gameStartInfo={gameStarted} handleGameOver={handleGameOver} />}
+      {layout === 'gameOver' && <GameOver gameOverInfo={gameinfo} handlechange={handlechange} />}
     </div>
   );
 }
